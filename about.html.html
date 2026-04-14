@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Mohit Singh | Best Digital Marketer Delhi NCR | RankVibe</title>
+<meta name="description" content="Learn about Mohit Singh — Best Digital Marketer in Delhi NCR. Founder of RankVibe. AI-powered digital marketing expert with 150+ brands transformed.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#060e1f;
+  --navy2:#0a1830;
+  --navy3:#0f2245;
+  --gold:#c8a96e;
+  --gold2:#e8c98e;
+  --gold3:#f5e0b0;
+  --white:#f8f6f0;
+  --accent:#00d4ff;
+  --accent2:#7b2ff7;
+  --green:#00e5aa;
+  --text-muted:#7a8da8;
+  --border:rgba(200,169,110,0.18);
+  --card:rgba(255,255,255,0.03);
+}
+html{scroll-behavior:smooth}
+body{background:var(--navy);color:var(--white);font-family:"DM Sans",sans-serif;overflow-x:hidden}
+#bg-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
+
+/* ===== NAV ===== */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:14px 5%;display:flex;align-items:center;justify-content:space-between;background:rgba(6,14,31,.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--border);transition:all .3s}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo img{height:44px;width:44px;border-radius:50%;object-fit:cover;border:1.5px solid var(--gold)}
+.nav-brand{font-family:"Playfair Display",serif;font-size:19px;color:var(--gold)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--text-muted);text-decoration:none;font-size:13px;font-weight:500;transition:color .3s;letter-spacing:.5px}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-cta{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:9px 22px;border-radius:50px;font-weight:700;font-size:13px;text-decoration:none;transition:all .3s;white-space:nowrap}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(200,169,110,.4)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:24px;height:2px;background:var(--gold);border-radius:2px;transition:.3s}
+#mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;background:rgba(6,14,31,.98);border-bottom:1px solid var(--border);padding:24px 5%;z-index:999}
+#mobile-menu ul{list-style:none;display:flex;flex-direction:column;gap:16px}
+#mobile-menu a{color:var(--white);text-decoration:none;font-size:16px;padding:8px 0;border-bottom:1px solid var(--border);display:block}
+
+/* ===== SECTIONS ===== */
+section{position:relative;z-index:1;padding:90px 5%}
+.max-w{max-width:1200px;margin:0 auto}
+.sec-label{font-family:"Space Mono",monospace;font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:14px;display:block}
+.sec-title{font-family:"Playfair Display",serif;font-size:clamp(30px,3.5vw,48px);font-weight:900;line-height:1.1;margin-bottom:14px}
+.sec-title span{color:var(--gold)}
+.sec-sub{font-size:15px;color:var(--text-muted);max-width:580px;line-height:1.75}
+
+/* ===== HERO ABOUT ===== */
+.about-hero{min-height:100vh;position:relative;z-index:1;display:flex;align-items:center;padding:120px 5% 80px;overflow:hidden}
+.hero-glow1{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(0,212,255,.06),transparent 70%);top:-100px;right:-100px;pointer-events:none}
+.hero-glow2{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(123,47,247,.05),transparent 70%);bottom:-50px;left:-50px;pointer-events:none}
+.about-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:1200px;margin:0 auto;width:100%}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,212,255,.08);border:1px solid rgba(0,212,255,.2);padding:7px 18px;border-radius:50px;margin-bottom:20px;font-size:11px;font-weight:600;letter-spacing:2px;color:var(--accent);text-transform:uppercase;font-family:"Space Mono",monospace}
+.live-dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.5)}}
+.about-hero h1{font-family:"Playfair Display",serif;font-size:clamp(36px,4.5vw,62px);line-height:1.05;margin-bottom:20px;font-weight:900}
+.h1-l1{display:block;color:var(--white)}
+.h1-l2{display:block;background:linear-gradient(135deg,var(--gold),var(--gold2),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.ai-tag{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,rgba(123,47,247,.2),rgba(0,212,255,.1));border:1px solid rgba(123,47,247,.3);padding:5px 14px;border-radius:50px;font-size:11px;color:var(--accent2);margin-bottom:14px;font-family:"Space Mono",monospace;letter-spacing:1px}
+.ai-tag::before{content:"✦";font-size:10px}
+.about-hero-desc{font-size:16px;color:var(--text-muted);line-height:1.85;margin-bottom:32px;max-width:460px}
+.about-hero-desc strong{color:var(--white)}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:14px 32px;border-radius:50px;font-weight:700;font-size:14px;text-decoration:none;transition:all .3s;display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer;font-family:"DM Sans",sans-serif;white-space:nowrap}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 35px rgba(200,169,110,.4)}
+.btn-sec{background:transparent;color:var(--white);padding:14px 32px;border-radius:50px;font-weight:500;font-size:14px;text-decoration:none;transition:all .3s;display:inline-flex;align-items:center;gap:8px;border:1.5px solid rgba(255,255,255,.15);font-family:"DM Sans",sans-serif}
+.btn-sec:hover{border-color:var(--gold);color:var(--gold)}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 16px;text-align:center;backdrop-filter:blur(10px);transition:transform .3s,border-color .3s}
+.stat-card:hover{transform:translateY(-6px);border-color:var(--gold)}
+.stat-num{font-family:"Playfair Display",serif;font-size:34px;font-weight:900;background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat-label{font-size:11px;color:var(--text-muted);margin-top:4px;text-transform:uppercase;letter-spacing:1px}
+
+/* ===== PHOTO CARD ===== */
+.about-photo-wrap{display:flex;align-items:center;justify-content:center;perspective:1000px;position:relative}
+.card-3d-wrap{transform-style:preserve-3d;animation:card3d 8s ease-in-out infinite;position:relative}
+@keyframes card3d{0%,100%{transform:rotateY(-8deg) rotateX(3deg) translateY(0)}25%{transform:rotateY(5deg) rotateX(-2deg) translateY(-20px)}50%{transform:rotateY(8deg) rotateX(4deg) translateY(-10px)}75%{transform:rotateY(-3deg) rotateX(-3deg) translateY(-25px)}}
+.card-main{background:linear-gradient(135deg,rgba(15,34,69,.95),rgba(6,14,31,.98));border:1.5px solid var(--gold);border-radius:24px;padding:32px 28px;width:320px;box-shadow:0 40px 80px rgba(0,0,0,.6),0 0 60px rgba(200,169,110,.08),inset 0 1px 0 rgba(255,255,255,.05)}
+.logo-ring{width:100px;height:100px;border-radius:50%;margin:0 auto 18px;position:relative;display:flex;align-items:center;justify-content:center}
+.logo-ring img{width:90px;height:90px;border-radius:50%;object-fit:cover;position:relative;z-index:2}
+.ring-anim{position:absolute;inset:-6px;border-radius:50%;border:2px solid transparent;border-top-color:var(--gold);border-right-color:rgba(200,169,110,.3);animation:spin 3s linear infinite}
+.ring-anim2{position:absolute;inset:-12px;border-radius:50%;border:1px solid transparent;border-bottom-color:rgba(0,212,255,.4);border-left-color:rgba(123,47,247,.3);animation:spin 5s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.card-name{text-align:center;font-family:"Playfair Display",serif;font-size:19px;margin-bottom:2px}
+.card-role{text-align:center;color:var(--gold);font-size:12px;margin-bottom:6px}
+.ai-powered-badge{display:flex;align-items:center;justify-content:center;gap:6px;background:linear-gradient(135deg,rgba(123,47,247,.2),rgba(0,212,255,.1));border:1px solid rgba(123,47,247,.3);border-radius:50px;padding:5px 14px;margin:0 auto 22px;width:fit-content;font-size:10px;color:var(--accent);font-family:"Space Mono",monospace;letter-spacing:1px}
+.metric-item{padding:11px 0;border-bottom:1px solid rgba(200,169,110,.1)}
+.metric-item:last-child{border-bottom:none}
+.metric-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.metric-name{font-size:12px;color:var(--text-muted)}
+.metric-val{font-size:12px;font-weight:600;color:var(--green)}
+.bar-bg{height:3px;background:rgba(255,255,255,.06);border-radius:2px;overflow:hidden}
+.bar-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--gold),var(--accent));animation:barLoad 2s ease forwards}
+@keyframes barLoad{from{width:0}}
+.floating-badge{position:absolute;background:linear-gradient(135deg,rgba(0,229,170,.9),rgba(0,212,255,.8));border-radius:12px;padding:8px 14px;font-size:11px;font-weight:700;color:#000;white-space:nowrap;box-shadow:0 8px 20px rgba(0,229,170,.3);animation:badgeFloat 3s ease-in-out infinite}
+.fb1{top:-20px;right:-30px;animation-delay:.5s}
+.fb2{bottom:-15px;left:-30px;animation-delay:1.5s}
+@keyframes badgeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+
+/* ===== STORY SECTION ===== */
+#story{background:linear-gradient(180deg,var(--navy) 0%,rgba(15,34,69,.4) 100%)}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-top:60px}
+.story-text p{color:var(--text-muted);font-size:15px;line-height:1.85;margin-bottom:18px}
+.story-text p strong{color:var(--white)}
+.story-highlight{background:rgba(200,169,110,.06);border:1px solid var(--border);border-radius:16px;padding:24px;margin:24px 0}
+.story-highlight p{color:var(--white) !important;font-size:16px !important;font-style:italic;margin:0 !important}
+.story-highlight span{display:block;margin-top:10px;color:var(--gold);font-size:12px;font-family:"Space Mono",monospace;letter-spacing:1px}
+
+/* ===== TIMELINE ===== */
+.timeline{position:relative;padding-left:28px}
+.timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--gold),var(--accent),transparent)}
+.tl-item{position:relative;padding-bottom:32px}
+.tl-item:last-child{padding-bottom:0}
+.tl-dot{position:absolute;left:-28px;top:4px;width:14px;height:14px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--accent));border:2px solid var(--navy);box-shadow:0 0 12px rgba(200,169,110,.4)}
+.tl-year{font-family:"Space Mono",monospace;font-size:10px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:4px}
+.tl-title{font-family:"Playfair Display",serif;font-size:17px;margin-bottom:6px}
+.tl-desc{font-size:13px;color:var(--text-muted);line-height:1.65}
+
+/* ===== VALUES ===== */
+.values-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:56px}
+.val-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:32px 28px;transition:all .4s;position:relative;overflow:hidden}
+.val-card::before{content:'';position:absolute;inset:0;border-radius:20px;background:linear-gradient(135deg,rgba(200,169,110,.06),transparent);opacity:0;transition:.4s}
+.val-card:hover{transform:translateY(-8px);border-color:var(--gold);box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.val-card:hover::before{opacity:1}
+.val-icon{width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,rgba(200,169,110,.15),rgba(0,212,255,.05));border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:18px}
+.val-card h3{font-family:"Playfair Display",serif;font-size:19px;margin-bottom:10px}
+.val-card p{font-size:13px;color:var(--text-muted);line-height:1.75}
+
+/* ===== EXPERTISE ===== */
+.expertise-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
+.exp-item{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 20px;display:flex;align-items:center;gap:14px;transition:.3s}
+.exp-item:hover{border-color:var(--gold);transform:translateX(4px)}
+.exp-icon{font-size:22px;flex-shrink:0}
+.exp-info{flex:1}
+.exp-name{font-size:13px;font-weight:600;margin-bottom:6px}
+.exp-bar-bg{height:3px;background:rgba(255,255,255,.06);border-radius:2px;overflow:hidden}
+.exp-bar-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--gold),var(--accent));animation:barLoad 2s ease forwards}
+.exp-pct{font-size:11px;color:var(--green);font-family:"Space Mono",monospace;flex-shrink:0}
+
+/* ===== ACHIEVEMENTS ===== */
+.achievements-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px;margin-top:56px}
+.ach-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:28px 24px;text-align:center;transition:.3s}
+.ach-card:hover{border-color:var(--gold);transform:translateY(-6px)}
+.ach-num{font-family:"Playfair Display",serif;font-size:44px;font-weight:900;background:linear-gradient(135deg,var(--gold),var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:6px}
+.ach-label{font-size:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.ach-icon{font-size:24px}
+
+/* ===== CTA SECTION ===== */
+#cta-section{background:linear-gradient(135deg,rgba(15,34,69,.8),rgba(6,14,31,.9));border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.cta-inner{text-align:center;max-width:700px;margin:0 auto}
+.cta-inner h2{font-family:"Playfair Display",serif;font-size:clamp(28px,3vw,44px);font-weight:900;margin-bottom:16px}
+.cta-inner p{color:var(--text-muted);font-size:16px;line-height:1.75;margin-bottom:36px}
+.cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.cta-value{display:inline-flex;align-items:center;gap:8px;background:rgba(0,229,170,.08);border:1px solid rgba(0,229,170,.2);padding:8px 20px;border-radius:50px;font-size:13px;color:var(--green);font-family:"Space Mono",monospace;margin-bottom:28px}
+
+/* ===== WA BUTTON ===== */
+#wa-btn{position:fixed;bottom:28px;right:28px;z-index:9000;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#25d366,#128c7e);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 28px rgba(37,211,102,.5);cursor:pointer;transition:all .3s;text-decoration:none;animation:waBounce 2.5s ease-in-out infinite}
+@keyframes waBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+#wa-btn:hover{transform:scale(1.12) !important;animation:none;box-shadow:0 12px 36px rgba(37,211,102,.6)}
+#wa-btn svg{width:28px;height:28px;fill:white}
+
+/* ===== FOOTER ===== */
+footer{background:rgba(6,14,31,.98);border-top:1px solid var(--border);padding:56px 5% 28px;position:relative;z-index:1}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:44px;margin-bottom:44px}
+.footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.footer-logo img{height:42px;width:42px;border-radius:50%;object-fit:cover;border:1.5px solid var(--gold)}
+.footer-logo span{font-family:"Playfair Display",serif;font-size:20px;color:var(--gold)}
+.footer-desc{font-size:13px;color:var(--text-muted);line-height:1.8;max-width:270px}
+.footer-col h4{font-size:12px;color:var(--white);font-weight:600;margin-bottom:18px;text-transform:uppercase;letter-spacing:1.5px}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:9px}
+.footer-col a{color:var(--text-muted);text-decoration:none;font-size:13px;transition:color .3s}
+.footer-col a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.footer-bottom p{font-size:12px;color:var(--text-muted)}
+.footer-bottom span{color:var(--gold)}
+
+/* ===== SCROLL REVEAL ===== */
+.reveal{opacity:0;transform:translateY(36px);transition:all .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:960px){
+  .about-hero-grid,.story-grid{grid-template-columns:1fr}
+  .about-photo-wrap{display:none}
+  .footer-grid{grid-template-columns:1fr}
+  nav .nav-links{display:none}
+  .hamburger{display:flex}
+  .expertise-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  section{padding:60px 5%}
+  .hero-stats{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ANIMATED BG -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDQiIGhlaWdodD0iNDQiIHZpZXdCb3g9IjAgMCA0NCA0NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIyMiIgY3k9IjIyIiByPSIyMiIgZmlsbD0iIzBmMjI0NSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTglIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjYzhhOTZlIiBmb250LXNpemU9IjE4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCI+UjwvdGV4dD48L3N2Zz4=" alt="RankVibe">
+    <span class="nav-brand">RankVibe</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#ai-section">AI Marketing</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#clients">Clients</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <a href="https://wa.me/918920327041?text=Hi%20Mohit!%20Free%20audit%20claim" class="nav-cta" target="_blank">Free Audit →</a>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div id="mobile-menu">
+  <ul>
+    <li><a href="index.html#ai-section">AI Marketing</a></li>
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#clients">Clients</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="https://wa.me/918920327041" target="_blank" style="color:var(--gold)">📱 WhatsApp Mohit</a></li>
+  </ul>
+</div>
+
+<!-- ===== ABOUT HERO ===== -->
+<section class="about-hero">
+  <div class="hero-glow1"></div>
+  <div class="hero-glow2"></div>
+  <div class="about-hero-grid">
+    <div>
+      <div class="ai-tag">✦ Founder & CEO — RankVibe</div>
+      <div class="hero-badge"><span class="live-dot"></span>Available for New Projects</div>
+      <h1>
+        <span class="h1-l1">Meet Mohit Singh</span>
+        <span class="h1-l2">Delhi NCR's Most<br>Trusted Marketer</span>
+      </h1>
+      <p class="about-hero-desc">I'm <strong>Mohit Singh</strong> — the founder of RankVibe and the <strong>best digital marketer in Delhi NCR</strong>. I help Indian and global brands grow through AI-powered SEO, Google Ads, and social media strategies that actually deliver results.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/918920327041?text=Hi%20Mohit!%20Free%20audit%20claim" class="btn-primary" target="_blank">🎁 Get Free ₹4000 Audit</a>
+        <a href="index.html#contact" class="btn-sec">Let's Talk</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-num">150+</div>
+          <div class="stat-label">Brands Grown</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">6+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">5x</div>
+          <div class="stat-label">Avg. Client ROI</div>
+        </div>
+      </div>
+    </div>
+    <div class="about-photo-wrap">
+      <div class="floating-badge fb1">🏆 Top Rated Expert</div>
+      <div class="floating-badge fb2">🤖 AI-First Marketer</div>
+      <div class="card-3d-wrap">
+        <div class="card-main">
+          <div class="logo-ring">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTAiIGhlaWdodD0iOTAiIHZpZXdCb3g9IjAgMCA5MCA5MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI0NSIgY3k9IjQ1IiByPSI0NSIgZmlsbD0iIzBmMjI0NSIvPjxjaXJjbGUgY3g9IjQ1IiBjeT0iMzMiIHI9IjE2IiBmaWxsPSIjYzhhOTZlIiBvcGFjaXR5PSIwLjkiLz48ZWxsaXBzZSBjeD0iNDUiIGN5PSI3MiIgcng9IjI2IiByeT0iMTYiIGZpbGw9IiNjOGE5NmUiIG9wYWNpdHk9IjAuNyIvPjwvc3ZnPg==" alt="Mohit Singh">
+            <div class="ring-anim"></div>
+            <div class="ring-anim2"></div>
+          </div>
+          <div class="card-name">Mohit Singh</div>
+          <div class="card-role">Founder & CEO, RankVibe</div>
+          <div class="ai-powered-badge">✦ AI-POWERED MARKETER</div>
+          <div class="metric-item">
+            <div class="metric-head"><span class="metric-name">SEO Expertise</span><span class="metric-val">Expert</span></div>
+            <div class="bar-bg"><div class="bar-fill" style="width:95%"></div></div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-head"><span class="metric-name">Google Ads</span><span class="metric-val">Expert</span></div>
+            <div class="bar-bg"><div class="bar-fill" style="width:92%"></div></div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-head"><span class="metric-name">AI Marketing</span><span class="metric-val">Pioneer</span></div>
+            <div class="bar-bg"><div class="bar-fill" style="width:98%"></div></div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-head"><span class="metric-name">Social Media</span><span class="metric-val">Expert</span></div>
+            <div class="bar-bg"><div class="bar-fill" style="width:88%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STORY SECTION ===== -->
+<section id="story">
+  <div class="max-w">
+    <span class="sec-label reveal">My Journey</span>
+    <h2 class="sec-title reveal">The Story Behind <span>RankVibe</span></h2>
+    <div class="story-grid">
+      <div class="story-text reveal">
+        <p>I started my digital marketing journey with one simple belief — <strong>every business deserves to grow</strong>. Growing up in Delhi NCR, I saw countless local businesses struggle to compete online while larger brands dominated the search results. That frustration became my fuel.</p>
+        <p>After years of working with agencies and learning the craft from the inside out, I founded <strong>RankVibe</strong> — a digital marketing agency that combines the power of artificial intelligence with deep human expertise to deliver results that truly move the needle.</p>
+        <div class="story-highlight">
+          <p>"My mission is simple: use AI and data to give every business — big or small — the digital edge they deserve. No fluff. No fake promises. Just real, measurable growth."</p>
+          <span>— Mohit Singh, Founder & CEO</span>
+        </div>
+        <p>Today, RankVibe serves <strong>150+ brands</strong> across India and the USA, delivering consistent ROI through AI-powered SEO, Google Ads, social media marketing, and content strategies that rank and convert.</p>
+        <p>When I'm not scaling businesses, I'm constantly testing new AI tools, studying Google's algorithm updates, and sharing my knowledge through this platform — because a rising tide lifts all boats.</p>
+      </div>
+      <div class="reveal">
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2018</div>
+            <div class="tl-title">The Beginning</div>
+            <div class="tl-desc">Started digital marketing journey, learning SEO and Google Ads from scratch while working with Delhi-based startups.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2020</div>
+            <div class="tl-title">Agency Experience</div>
+            <div class="tl-desc">Worked with multiple agencies across Delhi NCR, managing campaigns for 30+ clients simultaneously and refining strategies.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2021</div>
+            <div class="tl-title">RankVibe Founded</div>
+            <div class="tl-desc">Launched RankVibe with a mission to deliver AI-powered digital marketing. First 10 clients achieved #1 Google rankings.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2022–23</div>
+            <div class="tl-title">AI Integration</div>
+            <div class="tl-desc">Pioneered AI-first approach to digital marketing, integrating advanced tools for SEO analysis, ad optimization, and content.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2024–25</div>
+            <div class="tl-title">150+ Brands & Growing</div>
+            <div class="tl-desc">Expanded to serve clients across India and USA. Average client ROI of 5x. Recognized as the Best Digital Marketer in Delhi NCR.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACHIEVEMENTS ===== -->
+<section id="achievements" style="background:rgba(15,34,69,.25)">
+  <div class="max-w">
+    <span class="sec-label reveal">Numbers That Matter</span>
+    <h2 class="sec-title reveal">Achievements That <span>Speak</span> for Themselves</h2>
+    <p class="sec-sub reveal">Real results from real campaigns. Every number represents a business transformed through AI-powered digital marketing.</p>
+    <div class="achievements-grid">
+      <div class="ach-card reveal">
+        <div class="ach-icon">🚀</div>
+        <div class="ach-num">150+</div>
+        <div class="ach-label">Brands Transformed</div>
+      </div>
+      <div class="ach-card reveal">
+        <div class="ach-icon">🏆</div>
+        <div class="ach-num">5x</div>
+        <div class="ach-label">Average ROI</div>
+      </div>
+      <div class="ach-card reveal">
+        <div class="ach-icon">📈</div>
+        <div class="ach-num">320%</div>
+        <div class="ach-label">Avg Traffic Growth</div>
+      </div>
+      <div class="ach-card reveal">
+        <div class="ach-icon">💰</div>
+        <div class="ach-num">5.8x</div>
+        <div class="ach-label">Best ROAS Achieved</div>
+      </div>
+      <div class="ach-card reveal">
+        <div class="ach-icon">🌍</div>
+        <div class="ach-num">2</div>
+        <div class="ach-label">Countries Served</div>
+      </div>
+      <div class="ach-card reveal">
+        <div class="ach-icon">⭐</div>
+        <div class="ach-num">98%</div>
+        <div class="ach-label">Client Satisfaction</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VALUES ===== -->
+<section id="values">
+  <div class="max-w">
+    <span class="sec-label reveal">What I Stand For</span>
+    <h2 class="sec-title reveal">Core Values That Drive <span>Everything</span></h2>
+    <p class="sec-sub reveal">These principles guide every campaign, every strategy, and every client relationship at RankVibe.</p>
+    <div class="values-grid">
+      <div class="val-card reveal">
+        <div class="val-icon">🤖</div>
+        <h3>AI-First Thinking</h3>
+        <p>Every strategy begins with AI-powered analysis. I use cutting-edge tools to uncover insights that humans alone would miss, giving your campaigns a competitive edge.</p>
+      </div>
+      <div class="val-card reveal">
+        <div class="val-icon">📊</div>
+        <h3>Data Over Guesswork</h3>
+        <p>No more "gut feel" marketing. Every decision at RankVibe is backed by hard data — from keyword research to ad spend allocation to content strategy.</p>
+      </div>
+      <div class="val-card reveal">
+        <div class="val-icon">🤝</div>
+        <h3>Radical Transparency</h3>
+        <p>Monthly AI-generated reports that show exactly what's working, what's not, and what we're doing about it. No hiding behind vanity metrics.</p>
+      </div>
+      <div class="val-card reveal">
+        <div class="val-icon">⚡</div>
+        <h3>Results, Not Excuses</h3>
+        <p>I measure success by your business growth, not by impressions or clicks. If campaigns aren't converting, I iterate fast until they do.</p>
+      </div>
+      <div class="val-card reveal">
+        <div class="val-icon">🌱</div>
+        <h3>Long-Term Growth</h3>
+        <p>Quick wins matter, but sustainable growth is the goal. I build digital foundations that keep working for your business months and years down the line.</p>
+      </div>
+      <div class="val-card reveal">
+        <div class="val-icon">💡</div>
+        <h3>Continuous Innovation</h3>
+        <p>Digital marketing evolves daily. I'm always testing new strategies, tools, and platforms to ensure your brand stays ahead of the competition.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERTISE ===== -->
+<section id="expertise" style="background:rgba(15,34,69,.3)">
+  <div class="max-w">
+    <span class="sec-label reveal">Skills & Tools</span>
+    <h2 class="sec-title reveal">Expertise That Gets <span>Results</span></h2>
+    <p class="sec-sub reveal">Years of hands-on experience with the best tools in digital marketing, combined with AI-powered precision.</p>
+    <div class="expertise-grid reveal">
+      <div class="exp-item">
+        <div class="exp-icon">🔍</div>
+        <div class="exp-info">
+          <div class="exp-name">SEO & Local SEO</div>
+          <div class="exp-bar-bg"><div class="exp-bar-fill" style="width:95%"></div></div>
+        </div>
+        <div class="exp-pct">95%</div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-icon">📢</div>
+        <div class="exp-info">
+          <div class="exp-name">Google Ads & PPC</div>
+          <div class="exp-bar-bg"><div class="exp-bar-fill" style="width:92%"></div></div>
+        </div>
+        <div class="exp-pct">92%</div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-icon">📱</div>
+        <div class="exp-info">
+          <div class="exp-name">Meta & Social Ads</div>
+          <div class="exp-bar-bg"><div class="exp-bar-fill" style="width:90%"></div></div>
+        </div>
+        <div class="exp-pct">90%</div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-icon">🤖</div>
+        <div class="exp-info">
+          <div class="exp-name">AI Marketing Tools</div>
+          <div class="exp-bar-bg"><div class="exp-bar-fill" style="width:98%"></div></div>
+        </div>
+        <div class="exp-pct">98%</div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-icon">✍️</div>
+        <div class="exp-info">
+          <div class="exp-name">Content Strategy</div>
+          <div class="exp-bar-bg"><div class="exp-bar-fill" style="width:88%"></div></div>
+        </div>
+        <div class="exp-pct">88%</div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-icon">📊</div>
+        <div class="exp-info">
+          <div class="exp-name">Analytics & Reporting</div>
+          <div class="exp-bar-bg"><div class="exp-bar-fill" style="width:93%"></div></div>
+        </div>
+        <div class="exp-pct">93%</div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-icon">🎯</div>
+        <div class="exp-info">
+          <div class="exp-name">Conversion Rate Optimization</div>
+          <div class="exp-bar-bg"><div class="exp-bar-fill" style="width:86%"></div></div>
+        </div>
+        <div class="exp-pct">86%</div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-icon">📧</div>
+        <div class="exp-info">
+          <div class="exp-name">Email & WhatsApp Marketing</div>
+          <div class="exp-bar-bg"><div class="exp-bar-fill" style="width:84%"></div></div>
+        </div>
+        <div class="exp-pct">84%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section id="cta-section">
+  <div class="max-w">
+    <div class="cta-inner">
+      <span class="sec-label" style="text-align:center;display:block">Ready to Grow?</span>
+      <h2>Let's Build Your <span style="color:var(--gold)">Digital Empire</span> Together</h2>
+      <div class="cta-value">🎁 FREE AI Business Audit — Worth ₹4,000</div>
+      <p>Whether you're a startup in Noida, an established business in Gurgaon, or a global brand — I'm here to help you dominate Google and grow your revenue through AI-powered digital marketing.</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/918920327041?text=Hi%20Mohit!%20Free%20audit%20claim" class="btn-primary" target="_blank">🚀 Claim Free Audit Now</a>
+        <a href="index.html#contact" class="btn-sec">📋 View All Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="max-w">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDIiIGhlaWdodD0iNDIiIHZpZXdCb3g9IjAgMCA0MiA0MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIyMSIgY3k9IjIxIiByPSIyMSIgZmlsbD0iIzBmMjI0NSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTglIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjYzhhOTZlIiBmb250LXNpemU9IjE3IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCI+UjwvdGV4dD48L3N2Zz4=" alt="RankVibe">
+          <span>RankVibe</span>
+        </div>
+        <p class="footer-desc">Mohit Singh — Best Digital Marketer in Delhi NCR. AI-powered digital marketing expert helping businesses grow through data-driven strategies.</p>
+        <p style="font-size:13px;color:var(--gold);margin-top:14px">📞 +91 8920327041</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#services">SEO Services</a></li>
+          <li><a href="index.html#services">Google Ads</a></li>
+          <li><a href="index.html#services">Meta Ads</a></li>
+          <li><a href="index.html#services">Social Media</a></li>
+          <li><a href="index.html#ai-section">AI Marketing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index.html#reviews">Testimonials</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="https://wa.me/918920327041" target="_blank">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>RankVibe</span> · Mohit Singh. Best Digital Marketer in Delhi NCR.</p>
+      <p>Made with ❤️ in <span>Delhi, India</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/918920327041" id="wa-btn" target="_blank">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// ===== BG CANVAS =====
+const canvas=document.getElementById("bg-canvas");
+const ctx=canvas.getContext("2d");
+function resizeCanvas(){canvas.width=window.innerWidth;canvas.height=window.innerHeight}
+resizeCanvas();
+window.addEventListener("resize",resizeCanvas);
+const pts=[];
+for(let i=0;i<100;i++)pts.push({x:Math.random()*canvas.width,y:Math.random()*canvas.height,r:Math.random()*1.5+.3,dx:(Math.random()-.5)*.35,dy:(Math.random()-.5)*.35,a:Math.random()*.4+.1});
+function drawBG(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  pts.forEach(p=>{
+    ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+    ctx.fillStyle=`rgba(200,169,110,${p.a})`;ctx.fill();
+    p.x+=p.dx;p.y+=p.dy;
+    if(p.x<0||p.x>canvas.width)p.dx*=-1;
+    if(p.y<0||p.y>canvas.height)p.dy*=-1;
+  });
+  for(let i=0;i<pts.length;i++){
+    for(let j=i+1;j<pts.length;j++){
+      const dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y;
+      const dist=Math.sqrt(dx*dx+dy*dy);
+      if(dist<120){
+        ctx.beginPath();
+        ctx.moveTo(pts[i].x,pts[i].y);
+        ctx.lineTo(pts[j].x,pts[j].y);
+        ctx.strokeStyle=`rgba(0,212,255,${.15*(1-dist/120)})`;
+        ctx.lineWidth=.5;ctx.stroke();
+      }
+    }
+  }
+  requestAnimationFrame(drawBG);
+}
+drawBG();
+
+// ===== SCROLL REVEAL =====
+const reveals=document.querySelectorAll(".reveal");
+reveals.forEach(r=>new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.1}).observe(r));
+
+// ===== NAV =====
+window.addEventListener("scroll",()=>{
+  document.querySelector("nav").style.background=window.scrollY>50?"rgba(6,14,31,.98)":"rgba(6,14,31,.92)";
+});
+function toggleMenu(){
+  const m=document.getElementById("mobile-menu");
+  m.style.display=m.style.display==="block"?"none":"block";
+}
+</script>
+</body>
+</html>
